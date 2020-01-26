@@ -2,7 +2,7 @@ from .common import *
 import dj_database_url
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 ALLOWED_HOSTS = ['*']
 
 
@@ -14,3 +14,7 @@ DATABASES['default']=dj_database_url.config()
 
 SECURE_PROXY_SSL_HEADER=('HTTPS_X_FORWARD','https')
 
+
+
+#デプロイするとき
+#wsgi.py の whitenoise 関連のコードのコメントアウトを外す

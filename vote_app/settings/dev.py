@@ -12,3 +12,8 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
+
+
+#ローカルでの実行時
+#① wsgi.py の whitenoise 関連のコードをコメントアウトする
+#②　python manage.py runserver --settings miniblog.settings.dev　で実行するhttps://shrouded-shore-49646.herokuapp.com/
