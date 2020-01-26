@@ -1,0 +1,46 @@
+{% extends "base.html"%}
+{% block body%}
+    <h2 class="text-center mt-0">TOP</h2>
+      <hr class="divider my-4">
+
+        <div class="row text-center"> 
+        <div class="col-lg-3 col-md-6 text-center">
+            <div class="mt-5">
+                <i class="fas fa-4x fa-gem text-primary mb-4"></i>
+                <h2 class="text text-dark">バンド一覧</h2>
+                <a class="btn btn-primary btn-xl js-scroll-trigger" href="{% url 'band_list'%}">BAND LIST,VOTE</a>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="col-lg-3 col-md-6 text-center">
+            <div class="mt-5">
+                <i class="fas fa-4x fa-gem text-primary mb-4"></i>
+                <h2 class="text text-dark">バンド追加</h2>
+                <a class="btn btn-primary btn-xl js-scroll-trigger" href="{% url 'band_create'%}">BAND CREATE</a>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="col-lg-3 col-md-6 text-center" >
+            <div class="mt-5">
+                <i class="fas fa-4x fa-gem text-primary mb-4"></i>
+                <h2 class="text text-dark">全バンド削除</h2>
+                <a class="btn btn-primary btn-xl js-scroll-trigger" href="{% url 'all_delete_check'%}">ALL DELETE</a>
+            </div>
+        </div>
+
+        <br>
+        
+        <div class="col-lg-3 col-md-6 text-center">
+            <div class="mt-5">
+                <i class="fas fa-4x fa-gem text-primary mb-4"></i>
+                <h2 class="text text-dark">結果</h2>
+                <a class="btn btn-primary btn-xl js-scroll-trigger" href="{% url 'aggregate'%}">RESULT</a>
+            </div>
+        </div>
+
+    </div>
+{% endblock%}

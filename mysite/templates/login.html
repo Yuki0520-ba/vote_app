@@ -1,0 +1,23 @@
+{% extends "base.html"%}
+
+<h2 class="text-center mt-0">LOGIN</h2>
+      <hr class="divider my-4">
+      
+
+{% block body%}
+    <form method="post" acrtion="{% url "login"%}">
+        {% csrf_token%}
+
+        <table class="table">
+            {{form}}
+        </table>
+
+        <input type="hidden" name="next" value="{{ next }}">
+        <button class="btn btn-outline-dark" type="submit">ログイン</button>
+        <a href="{% url 'band_index' %}" class="btn btn-outline-dark"> トップ</a>
+        
+       
+    </form>
+
+
+{% endblock %}

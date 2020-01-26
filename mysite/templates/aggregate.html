@@ -1,0 +1,17 @@
+{% extends "base.html"%}
+{% block body%}
+    <h2 class="text-center mt-0">RESULT</h2>
+      <hr class="divider my-4">
+      
+    <div class="text-center mt-0">
+    <!-- ここにデータが入る -->
+      {% for result in result_list %}
+        <h3>{{result.name}} : {{result.point}} 点 </h3><br>
+      {% endfor %}
+    </div>
+    
+{% endblock%}
+
+
+
+

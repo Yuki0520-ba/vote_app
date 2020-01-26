@@ -1,0 +1,15 @@
+{% extends "base.html"%}
+{% block body%}
+    <h2 class="text-center mt-0">VOTE UPDATE</h2>
+      <hr class="divider my-4">
+
+    
+    <form method="post">
+        {% csrf_token %}  
+        <table class="table">
+            <h2 class="text-center mt-0">{{band_name}}</h2>
+            {{form}}
+        <table>
+        <button class="btn btn-outline-dark" type="submit">送信</button>
+    </form>
+{% endblock%}

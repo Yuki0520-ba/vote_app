@@ -1,0 +1,23 @@
+{% extends "base.html"%}
+{% block body%}
+    <h2 class="text-center mt-0">BAND DETAIL</h2>
+      <hr class="divider my-4">
+      
+    <div>
+    <!-- ここにデータが入る -->
+    <h1 class>{{object.band_name}}  :  {{object.order}}番目</h1>
+    </div>
+    <br>
+    <div>
+      {% if user.is_authenticated%} {#ユーザーがログインしているかどうか判定#}
+        <a href="{% url 'band_update' object.id%}" class="btn btn-outline-dark"> 編集</a>
+        <a href="{% url 'band_delete' object.id%}" class="btn btn-outline-primary"> 削除</a>
+      {% endif %}
+      <a href="{% url 'band_vote' object.id%}" class="btn btn-outline-dark"> 投票</a>
+
+    </div>
+{% endblock%}
+
+
+
+

@@ -1,0 +1,16 @@
+{% extends "base.html"%}
+{% block body%}
+    <h2 class="text-center mt-0">ALL DELETE</h2>
+      <hr class="divider my-4">
+      
+    <div class="text-center">
+        <h3>登録されているバンド情報を全て削除します。</h3>
+        <h3>よろしいですか？</h3>
+    </div>
+    <br>
+    <div class="text-center">
+      <a href="{% url 'band_all_delete'%}" class="btn btn-outline-primary"> はい</a>
+      <a href="{% url 'band_index' %}" class="btn btn-outline-dark"> いいえ</a>
+    </div>
+{% endblock%}
+
