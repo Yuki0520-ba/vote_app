@@ -1,1 +1,1 @@
-web: gunicorn miniblog.wsgi --log-file -
+web: gunicorn vote_app.wsgi --log-file -
