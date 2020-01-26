@@ -89,7 +89,8 @@ def aggregate(request):
         ex_dic['name']=band.band_name
         
         if point['count__avg']!=None:
-            ex_dic['point']=point['count__avg']+band.point
+           
+            ex_dic['point']=point['count__avg']+int(band.point)
             result_list.append(ex_dic)
 
     if result_list:

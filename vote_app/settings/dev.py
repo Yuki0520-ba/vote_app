@@ -16,4 +16,4 @@ DATABASES = {
 
 #ローカルでの実行時
 #① wsgi.py の whitenoise 関連のコードをコメントアウトする
-#②　python manage.py runserver --settings miniblog.settings.dev　で実行するhttps://shrouded-shore-49646.herokuapp.com/
+#②　python manage.py runserver --settings vote_app.settings.dev　で実行する

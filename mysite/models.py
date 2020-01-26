@@ -3,9 +3,10 @@ from django.db import models
 # Create your models here.
 class Band(models.Model):
     band_name=models.CharField(verbose_name='バンド名',max_length=30)
-    point=models.IntegerField(
+    point=models.DecimalField(
         verbose_name='点数',
         default=0,
+        max_digits=3, decimal_places=0
        
     )
     order=models.IntegerField(verbose_name='順番',default=0)
